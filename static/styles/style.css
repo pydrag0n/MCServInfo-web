@@ -1,0 +1,106 @@
+/* Основные стили */
+*{
+    font-family: 'Roboto', serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.main-container {
+    max-width: none;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.server-name-input-container {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.server-name-input {
+    width: 80%;
+    padding: 12px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.submit-btn {
+    
+    float: right;
+    height: 50px;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(0, 168, 197);
+    margin-bottom: 45px;
+    margin-right: 20px;
+    color: white;
+    transition: filter 0.3s ease;
+}
+
+.submit-btn:hover {
+    filter: brightness(80%);
+}
+.json-data{
+    padding: 20px;
+    border-color: black;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
+    background-color: rgb(209, 209, 209);
+    border-radius: 4px;
+    margin-left: 0px;
+
+}
+
+.answer-text {
+    white-space: nowrap;
+    width: 400px;
+    height: 100px;
+    resize: vertical;
+    font-size: 20px;
+}
+/* Медиа-запросы для адаптивности */
+@media (max-width: 800px) {
+    .main-container {
+        max-width: none;
+        padding: 10px;
+    }
+
+    .server-name-input-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .server-name-input {
+        
+        margin: auto 0;
+        margin-bottom: 20px;
+        width: 92%;
+        
+    }
+
+    .submit-btn {
+        width: 100%;
+        margin: auto 0;
+        margin-bottom: 20px;
+    }
+    .json-data{
+        width: 400px;
+    }
+}
